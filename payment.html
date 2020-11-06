@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="try.css">
+	<title>Maa Medical</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow  div:first')
+    .fadeOut(2000)
+    .next()
+    .fadeIn(2000)
+    .end()
+
+    .appendTo('#slideshow');
+},  2000);
+</script>
+<script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+    </script> 
+  
+    <script> 
+        $(document).ready(function() { 
+            $("#myBtn").click(function() { 
+                $(document).scrollTop($(document).height()); 
+            }); 
+        }); 
+    </script>
+	<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  
+ var a = document.forms["myForm"]["lname"].value;
+ var b = document.forms["myForm"]["street"].value;
+ var c = document.forms["myForm"]["city"].value;
+ var d = document.forms["myForm"]["state"].value;
+ var e = document.forms["myForm"]["zip"].value;
+ 
+ var g = document.forms["myForm"]["Mobile"].value;
+ var h = document.forms["myForm"]["address"].value;
+ 
+
+     if(x==""){
+    alert("First Name must be filled out");
+    return false;
+  }
+  if (a == "") {
+    alert("last Name must be filled out");
+    return false;
+  }
+   if (b == "") {
+    alert("Sreet Address must be filled out");
+    return false;
+  }
+   if (c == "") {
+    alert("City must be filled out");
+    return false;
+  }
+   if (d == "") {
+    alert("State must be filled out");
+    return false;
+  }
+   if (e == "") {
+    alert("zip must be filled out");
+    return false;
+}
+    else if(e.length!=6){
+alert("Enter the 6 digit ZipCode")
+    }
+ if (g== "") {
+    alert("Mobile Number must be filled out");
+    return false;
+  }else if(g.length!=10){
+alert("Enter the 10 digit Mobile Number")
+    }
+
+  
+   if (h == "") {
+    alert("Address type must be filled out");
+    return false;
+  }
+  
+
+
+}
+</script>
+<body class="body2">
+<div class="topnav">
+	<a  href="file:///C:/Users/Ashish%20KR/Desktop/maamed/index.html"><img src="home.png" ></a>
+  <a class="active" href="index.html">Home</a>
+ <a href="login.html" id="b">Login/Signup</a>
+  <a href="news.html" >News</a>
+  <div  id="myBtn">
+
+  <a id="b" href="#contact">Contact</a></div>
+  <a href="best.html">Best Seller</a> 	
+  <a href="health.html">HealthCare</a>
+
+  <div class="dropdown">
+  	<button class="dropbtn">Categories</button>
+  	 <div class="list">
+  	 	<a href="#">Fever&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a href="#">Cold&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a href="#">STOMACH&nbsp;</a>
+    <a href="#">VITAMINS&nbsp;</a>
+    
+    <a href="#">OTHERS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+  	 </div>
+  </div>
+</div>
+
+<div class="add">
+	<form  name="myForm" onsubmit=" validateForm()" action="cart.html">
+		<fieldset >
+			<legend>Shipping Address:</legend>
+		<label >First Name<span style="font-size:17px;color:red;">*</span></label>
+		<input type="text" name="fname" required="Enter First Name" style="margin-left: 60px;">
+		<label class="llast">Last Name<span style="font-size:17px;color:red;">*</span></label>
+		<input type="text" name="lname" required="Enter Last Name" style="margin-left: 40px;">
+		<label >Street Address<span style="font-size:17px;color:red;">*</span></label>
+		<textarea style="margin-top: 30px; margin-left: 30px; width: 82.5%; height: 60px; background-color: #99ffff; " required="Enter Address" name="street"></textarea>
+		<label >City<span style="font-size:17px;color:red;">*</span></label>
+		<input type="text" name="city" required="Enter the City" style="margin-top: 27px; margin-left: 108px;">
+		<label class="llast">State<span style="font-size:17px;color:red;">*</span></label>
+		<input list="state"  style="margin-left: 78px; margin-right: 15px;" required="Enter State" name="state">
+  <datalist id="state" >
+    <option value="Assam" >
+    <option value="Bihar">
+    <option value="Punjab">
+    <option value="Goa">
+    <option value="Uttar Pradesh">
+  </datalist>
+  <label>Zip Code<span style="font-size:17px;color:red;">*</span></label>
+  <input type="tel" name="zip" required="Eneter Zip Code" pattern="[0-9]{6}" style="margin-top: 27px; margin-left: 68px; margin-right: 97px;" size="6"  pattern="^\d{6}$" placeholder="Format:-xxxxxx" >
+  <label>Country</label>
+  <input type="text" name="country" value="India" style="margin-left: 66px;" readonly="">
+  <label>Mobile<span style="font-size:17px;color:red;">*</span></label>
+  <input type="tel" pattern="^\d{10}$"  required="Enter 10 digit Phone Number " style="margin-top: 27px; margin-left: 85px; margin-right: 100px;" maxlength="10" size="10" placeholder="Format:-xxxxxxxxxx" name="Mobile">
+  <label>Address Type<span style="font-size:17px;color:red;">*</span></label>
+  <input list="type" style="margin-left: 15px;" required="enetr address type" name="address">
+  <datalist id="type">
+  	<option value="Home">
+  	<option value="Work">
+  	<option value="Other">
+  </datalist>
+  <input type="Submit" class="sub" name="" value="Save" style="margin-top: 80px; margin-left: 140px; margin-right: 97px;  font-size: 20px; height: 50px; width: 30%; background-color: #f5113b; color: white;border-radius: 14px;" onclick="validateForm()"> 
+  <input type="reset" name="" class="sub" style="margin-left: 140px;font-size: 20px; height: 50px; width: 30%;background-color: #f5113b; color: white;border-radius: 14px;">
+	</fieldset></form>
+</div>
+
+
+<div class= "botom">
+	
+	
+</div>
+<div class="botom1">
+	<div class="payment">
+		<p>Payment Options</p></div>
+		<div class="cards">
+			<img src="payment.png"></div>
+
+		
+		
+	
+<div class="payment1">
+			<p >Secure Payment</p>
+		</div>
+		<div class="secure">
+			<img src="sa.png">
+		</div>
+</div>
+<div class="botom2">
+	<div class="payment2">
+		<p>Follow Us</p></div>
+		<div class="fb">
+			<a href="https://www.facebook.com/ashish.rockers.1"><img src="fbb.png"></a>
+
+			<a href="https://twitter.com/AshishK53501743"><img src="twi.png"></a>
+			<a href="https://www.instagram.com/ashish_.kr/?hl=en"><img src="inssss.png"></a>
+			<a href="www.linkedin.com/in/ashishkumarlpu" ><img src="link.png" class="lo"></a>
+		</div>
+		<div  class="email"><a href="mailto:ashishkr1081@gmail.com" style="font-size: 22px; font-weight: bold; color:  #cc0052; text-decoration: none; ">
+			<img src="gmai.png">sanjivspark@gmail.com</a>
+		</div>
+		<div class="call">
+			<img src="w.png" style="height: 30px;
+	width: 30px;">
+			<p style="font-size: 22px; font-weight: bold; color:  #cc0052;">8789815631</p>
+		</div>
+		<div>
+			<p style="font-size: 15px; color:  black; margin-top: 110px;">2020 Spark Medicare Pvt Ltd. All rights reserved
+
+</p>
+		</div>
+
+</div>
+<div class="botom3" class="botom3a">
+	<a href="https://goo.gl/maps/g99KhwCgpLXbzf57A"> <img src="add.jpg" style=" height: 35px; width: 35px; margin-top: 35px;"></a>
+<p style="font-size: 22px; font-weight: bold; color:  #cc0052;"> Womens Collge Road, Ward No. 14, Khashipur, Samastipur, Bihar - 848101</p>
+<div>
+	<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3590.3798610522445!2d85.77526941410594!3d25.8569723835936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed9099e05e48fb%3A0xe0bb26ca0216d378!2sWard%20Number%2014%2C%20Uttarayan%2C%20Kasipur%2C%20Samastipur%2C%20Bihar%20848101!5e0!3m2!1sen!2sin!4v1587820139274!5m2!1sen!2sin" width="100%" height="320" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+</div>
+</div>
+</body>
+</html>

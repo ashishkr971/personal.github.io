@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="try.css">
+	<title>Maa Medical</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow  div:first')
+    .fadeOut(2000)
+    .next()
+    .fadeIn(2000)
+    .end()
+
+    .appendTo('#slideshow');
+},  2000);
+
+</script>
+<script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+    </script> 
+  
+    <script> 
+        $(document).ready(function() { 
+            $("#myBtn").click(function() { 
+                $(document).scrollTop($(document).height()); 
+            }); 
+        }); 
+    </script>
+</head>
+<body>
+<div class="topnav">
+	<a  href="index.html"><img src="home.png" ></a>
+  <a class="active" href="index.html">Home</a>
+ <div id="hide"><a href="login.html" id="b">Login/Signup</a></div>
+  <a href="news.html" >News</a>
+  <div  id="myBtn">
+
+  <a id="b" href="#contact">Contact</a></div>
+  <a href="best.html">Best Seller</a> 	
+  <a href="health.html">HealthCare</a>
+
+  <div class="dropdown">
+  	<button class="dropbtn">Categories</button>
+  	 <div class="list">
+  	 	<a href="#">Fever&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a href="#">Cold&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a href="#">STOMACH&nbsp;</a>
+    <a href="#">VITAMINS&nbsp;</a>
+    
+    <a href="#">OTHERS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+  	 </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div id="slideshow">
+   <div>
+     <img src="sy.png">
+   </div>
+   <div>
+     <img src="43.jpg">
+   </div>
+   <div>
+     <img src="img5.jpg">
+   </div>
+   <div>
+     <img src="img6.png">
+   </div>
+</div>
+
+
+
+
+<div class="card">
+  <img src="dolo.jpg" style="width:100%; height: 270px;">
+  <h1>Dolo 650</h1>
+ 
+   <p class="price">Rs.60</p>
+  <a href="payment.html"><p><button>Buy Now</button></p></a>
+</div>
+
+<div class="card"  style="margin-left: 40px;">
+  <img src="creon.jpg"  style="width:100%; height: 270px; ">
+  <h1>Creaon 10000</h1>
+  <p class="price">Rs.650</p>
+ 
+   <a href="payment.html"><p><button>Buy Now</button></p></a>
+</div>
+
+<div class="card"  style="margin-left: 40px;">
+  <img src="pantop.jpg"  style="width:100%; height: 270px; ">
+  <h1>Pantop 40</h1>
+  <p class="price">Rs.45</p>
+ 
+  <a href="payment.html"> <p><button>Buy Now</button></p></a>
+</div>
+
+<div class="card"  style="margin-left: 45px;">
+  <img src="ben.jpg"  style="width:100%; height: 270px; ">
+  <h1>Benedryl</h1>
+  <p class="price">Rs.130</p>
+ 
+ <a href="payment.html"><p><button>Buy Now</button></p></a>
+</div>
+ 
+<div class="card"  style=" margin-top: 50px;">
+  <img src="img34.jpg"  style="width:100%; height: 270px; ">
+  <h1>panacid</h1>
+  <p class="price">Rs.115</p>
+ 
+   <a href="payment.html"><p><button>Buy Now</button></p></a>
+</div>
+
+<div class="card"  style="margin-left: 40px; margin-top: 50px;">
+  <img src="img35.jpg"  style="width:100%; height: 270px; ">
+  <h1>Lorfast</h1>
+  <p class="price">Rs.120</p>
+ 
+  <a href="payment.html"> <p><button>Buy Now</button></p></a>
+</div>
+
+<div class="card"  style="margin-left: 40px; margin-top: 50px;">
+  <img src="img37.jpg"  style="width:100%; height: 270px; ">
+  <h1>Gas-X</h1>
+  <p class="price">Rs.320</p>
+ 
+  <a href="payment.html"><p><button>Buy Now</button></p></a>
+</div>
+
+<div class="card"  style="margin-left: 45px; margin-top: 50px;">
+  <img src="vik.jpg"  style="width:100%; height: 270px; ">
+  <h1>Vicks</h1>
+  <p class="price">Rs.90</p>
+ 
+  <a href="payment.html"> <p><button>Buy Now</button></p></a>
+</div>
+
+<div class="card"  style=" margin-top: 50px;">
+  <img src="img44.jpg"  style="width:100%; height: 270px; ">
+  <h1>Dettol</h1>
+  <p class="price">Rs.170</p>
+ 
+  <a href="payment.html"> <p><button>Buy Now</button></p></a>
+</div>
+
+<div class="card"  style="margin-left: 40px; margin-top: 50px;">
+  <img src="ors.jpg"  style="width:100%; height: 270px; ">
+  <h1>ORS</h1>
+  <p class="price">Rs.40</p>
+ 
+  <a href="payment.html"> <p><button>Buy Now</button></p></a>
+</div>
+
+<div class="card"  style="margin-left: 40px; margin-top: 50px;">
+  <img src="img32.jpg"  style="width:100%; height: 270px; ">
+  <h1>Liv.52</h1>
+  <p class="price">Rs.470</p>
+ 
+  <a href="payment.html"> <p><button>Buy Now</button></p></a>
+</div>
+
+<div class="card"  style="margin-left: 45px; margin-top: 50px; margin-bottom: 30px;">
+  <img src="cro.jpg"  style="width:100%; height: 270px; ">
+  <h1>Crocin</h1>
+  <p class="price">Rs.110</p>
+ 
+  <a href="payment.html"> <p><button>Buy Now</button></p></a>
+</div>
+
+
+
+  
+
+<div class= "botom">
+	
+	
+</div>
+<div class="botom1">
+	<div class="payment">
+		<p>Payment Options</p></div>
+		<div class="cards">
+			<img src="payment.png"></div>
+
+		
+		
+	
+<div class="payment1">
+			<p >Secure Payment</p>
+		</div>
+		<div class="secure">
+			<img src="sa.png">
+		</div>
+</div>
+<div class="botom2">
+	<div class="payment2">
+		<p>Follow Us</p></div>
+		<div class="fb">
+			<a href="https://www.facebook.com/ashish.rockers.1"><img src="fbb.png"></a>
+
+			<a href="https://twitter.com/AshishK53501743"><img src="twi.png"></a>
+			<a href="https://www.instagram.com/ashish_.kr/?hl=en"><img src="inssss.png"></a>
+			<a href="www.linkedin.com/in/ashishkumarlpu" ><img src="link.png" class="lo"></a>
+		</div>
+		<div  class="email"><a href="mailto:ashishkr1081@gmail.com" style="font-size: 22px; font-weight: bold; color:  #cc0052; text-decoration: none; ">
+			<img src="gmai.png">sanjivspark@gmail.com</a>
+		</div>
+		<div class="call">
+			<img src="w.png" style="height: 30px;
+	width: 30px;">
+			<p style="font-size: 22px; font-weight: bold; color:  #cc0052;">8789815631</p>
+		</div>
+		<div>
+			<p style="font-size: 15px; color:  black; margin-top: 110px;">2020 Spark Medicare Pvt Ltd. All rights reserved
+
+</p>
+		</div>
+
+</div>
+<div class="botom3" class="botom3a">
+<a href="https://goo.gl/maps/g99KhwCgpLXbzf57A">	<img src="add.jpg" style=" height: 35px; width: 35px; margin-top: 35px;"></a>
+<p style="font-size: 22px; font-weight: bold; color:  #cc0052;"> Womens Collge Road, Ward No. 14, Khashipur, Samastipur, Bihar - 848101</p>
+<div>
+	<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3590.3798610522445!2d85.77526941410594!3d25.8569723835936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed9099e05e48fb%3A0xe0bb26ca0216d378!2sWard%20Number%2014%2C%20Uttarayan%2C%20Kasipur%2C%20Samastipur%2C%20Bihar%20848101!5e0!3m2!1sen!2sin!4v1587820139274!5m2!1sen!2sin" width="100%" height="320" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+</div>
+</div>
+</body>
+</html>
